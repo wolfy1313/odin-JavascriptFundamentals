@@ -1,9 +1,20 @@
-let message = "Hello World"
-let hello;
+// let message = "Hello World"
+// let hello;
 
-hello = message
+// hello = message
 
 
 
-alert(message)
-alert(hello)
+// alert(message)
+// alert(hello)
+
+// let admin
+// let name = "John"
+
+// admin = name
+
+// alert(admin)
+
+// let ourPlanet = "Earth";
+// let currentVisitor = "Barth"
+
