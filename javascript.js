@@ -77,7 +77,46 @@
 // " \t \n" - 2
 // -2
 
-let a = prompt("First number?", 1)
-let b = prompt("Second number?", 2)
+// let a = prompt("First number?", 1)
+// let b = prompt("Second number?", 2)
 
-alert(+a + +b)
+// alert(+a + +b)
+
+// console.log(23 + 97)
+// console.log(1 + 2 + 4 + 6 + 10 + 16)
+
+// console.log((4 + 6 + 9) / 77)
+
+// let a = 10;
+// console.log(a)
+
+// console.log(9 * a)
+
+// let b = 7 * a
+// console.log(b)
+
+// let max = 57
+
+// let actual = max-13
+
+// let percentage = actual/max
+// console.log(percentage.toFixed(4))
+
+//STRINGS//
+
+const string = "The revolution will not be televised"
+
+console.log(string)
+
+const badString = string
+console.log(badString)
+
+const one = "Hello, "
+const two = "how are you is?"
+
+const joined = `${one}${two}`
+console.log(joined)
+
+const output = `I like the song.
+I gave it a score of 90%.`;
+console.log(output)
