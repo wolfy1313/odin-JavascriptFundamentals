@@ -120,3 +120,18 @@ console.log(joined)
 const output = `I like the song.
 I gave it a score of 90%.`;
 console.log(output)
+
+function tellTime() {
+let hour = 18
+if (hour <10){
+  greeting = "good day"
+} else if (hour <19) {
+  greeting = "good afternoon"
+} else {
+  greeting = "good night"
+}
+
+console.log(greeting)
+}
+
+tellTime()
