@@ -121,7 +121,7 @@ const output = `I like the song.
 I gave it a score of 90%.`;
 console.log(output)
 
-function tellTime() {
+tellTime = () => {
 let hour = 18
 if (hour <10){
   greeting = "good day"
@@ -135,3 +135,8 @@ console.log(greeting)
 }
 
 tellTime()
+
+let age = 94
+if (!(age <= 13 && age > 90)){
+  console.log("not middle-aged")
+}
