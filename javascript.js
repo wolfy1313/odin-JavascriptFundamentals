@@ -161,3 +161,17 @@ if (user === "Admin"){
   alert("I don't know you")
 }
 
+const select = document.querySelector('select');
+const para = document.querySelector('p')
+
+select.addEventListener('change', setWeather)
+
+function setWeather() {
+  const choice = select.value
+  if (choice === 'Cloudy') {
+    para.textContent = "It a cloud"
+  } else if (choice === 'Sunny'){
+    para.textContent = "It a sun tho"
+  }
+}
+
