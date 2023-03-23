@@ -168,10 +168,28 @@ select.addEventListener('change', setWeather)
 
 function setWeather() {
   const choice = select.value
-  if (choice === 'Cloudy') {
-    para.textContent = "It a cloud"
-  } else if (choice === 'Sunny'){
-    para.textContent = "It a sun tho"
+  // if (choice === 'Cloudy') {
+  //   para.textContent = "It a cloud"
+  // } else if (choice === 'Sunny'){
+  //   para.textContent = "It a sun tho"
+  // } else {
+  //   para.textContent = ""
+  // }
+  switch(choice){
+    case 'Cloudy':
+      para.textContent = "It a cloud"
+      break;
+    case 'Sunny':
+      para.textContent = "It a sun tho"
+      break;
+    case 'clear':
+      para.textContent = "do it clear?"
+      break;
+    case 'overcast':
+      para.textContent = "you shall not pass!"
+      break;
+    default:
+      para.textContent = ""
   }
 }
 
