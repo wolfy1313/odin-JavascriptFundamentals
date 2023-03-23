@@ -104,39 +104,60 @@
 
 //STRINGS//
 
-const string = "The revolution will not be televised"
+// const string = "The revolution will not be televised"
 
-console.log(string)
+// console.log(string)
 
-const badString = string
-console.log(badString)
+// const badString = string
+// console.log(badString)
 
-const one = "Hello, "
-const two = "how are you is?"
+// const one = "Hello, "
+// const two = "how are you is?"
 
-const joined = `${one}${two}`
-console.log(joined)
+// const joined = `${one}${two}`
+// console.log(joined)
 
-const output = `I like the song.
-I gave it a score of 90%.`;
-console.log(output)
+// const output = `I like the song.
+// I gave it a score of 90%.`;
+// console.log(output)
 
-tellTime = () => {
-let hour = 18
-if (hour <10){
-  greeting = "good day"
-} else if (hour <19) {
-  greeting = "good afternoon"
+
+//CONDITIONALS //
+
+// tellTime = () => {
+// let hour = 18
+// if (hour <10){
+//   greeting = "good day"
+// } else if (hour <19) {
+//   greeting = "good afternoon"
+// } else {
+//   greeting = "good night"
+// }
+
+// console.log(greeting)
+// }
+
+// tellTime()
+
+// let age = 94
+// if (!(age <= 13 && age > 90)){
+//   console.log("not middle-aged")
+// }
+
+let user = prompt("Who's there?")
+
+if (user === "Admin"){
+  let password = prompt("What's your password?")
+  if (password === "TheMaster"){
+    alert("Welcome!")
+  } else if (password === "" || password === null){
+    alert("Canceled")
+  } else {
+    alert("Wrong Password")
+  }
+} else if (user === "" || user === null) {
+  alert("Canceled")
 } else {
-  greeting = "good night"
+  alert("I don't know you")
 }
 
-console.log(greeting)
-}
-
-tellTime()
-
-let age = 94
-if (!(age <= 13 && age > 90)){
-  console.log("not middle-aged")
-}
