@@ -144,52 +144,112 @@
 //   console.log("not middle-aged")
 // }
 
-let user = prompt("Who's there?")
+// let user = prompt("Who's there?")
 
-if (user === "Admin"){
-  let password = prompt("What's your password?")
-  if (password === "TheMaster"){
-    alert("Welcome!")
-  } else if (password === "" || password === null){
-    alert("Canceled")
-  } else {
-    alert("Wrong Password")
-  }
-} else if (user === "" || user === null) {
-  alert("Canceled")
-} else {
-  alert("I don't know you")
-}
+// if (user === "Admin"){
+//   let password = prompt("What's your password?")
+//   if (password === "TheMaster"){
+//     alert("Welcome!")
+//   } else if (password === "" || password === null){
+//     alert("Canceled")
+//   } else {
+//     alert("Wrong Password")
+//   }
+// } else if (user === "" || user === null) {
+//   alert("Canceled")
+// } else {
+//   alert("I don't know you")
+// }
 
-const select = document.querySelector('select');
-const para = document.querySelector('p')
+//MDN CONDITIONALS//
+// const select = document.querySelector('select');
+// const para = document.querySelector('p')
 
-select.addEventListener('change', setWeather)
+// select.addEventListener('change', setWeather)
 
-function setWeather() {
-  const choice = select.value
-  // if (choice === 'Cloudy') {
-  //   para.textContent = "It a cloud"
-  // } else if (choice === 'Sunny'){
-  //   para.textContent = "It a sun tho"
-  // } else {
-  //   para.textContent = ""
-  // }
-  switch(choice){
-    case 'Cloudy':
-      para.textContent = "It a cloud"
-      break;
-    case 'Sunny':
-      para.textContent = "It a sun tho"
-      break;
-    case 'clear':
-      para.textContent = "do it clear?"
-      break;
-    case 'overcast':
-      para.textContent = "you shall not pass!"
-      break;
-    default:
-      para.textContent = ""
-  }
-}
+// function setWeather() {
+//   const choice = select.value
+//   // if (choice === 'Cloudy') {
+//   //   para.textContent = "It a cloud"
+//   // } else if (choice === 'Sunny'){
+//   //   para.textContent = "It a sun tho"
+//   // } else {
+//   //   para.textContent = ""
+//   // }
+//   switch(choice){
+//     case 'Cloudy':
+//       para.textContent = "It a cloud"
+//       break;
+//     case 'Sunny':
+//       para.textContent = "It a sun tho"
+//       break;
+//     case 'clear':
+//       para.textContent = "do it clear?"
+//       break;
+//     case 'overcast':
+//       para.textContent = "you shall not pass!"
+//       break;
+//     default:
+//       para.textContent = ""
+//   }
+// }
 
+// const select = document.querySelector('select')
+// const html = document.querySelector('html')
+// document.body.style.padding = '10px'
+
+// function update(bgColor, textColor) {
+//   html.style.backgroundColor = bgColor
+//   html.style.color = textColor
+// }
+
+// select.addEventListener('change', () => select.value === 'black'
+// ? update('black', 'white')
+// : update('white', 'black')
+// );
+
+//ACTIVE LEARNING CALENDAR MDN //
+// const select = document.querySelector('select')
+// const ul = document.querySelector('ul')
+// const h1 = document.querySelector('h1')
+
+// function createCalendar() {
+//   const month = select.value
+//   switch(month){
+//     case 'january':
+//   }
+// }
+
+// select.addEventListener('change', createCalendar)
+
+
+// let answer = prompt("What's the official name of javaScript?", "")
+
+// if (answer === "ECMAScript"){
+//   alert("Right!")
+// } else {
+//   alert("You don't know? \"ECMAScript\"!")
+// }
+
+// let answer = prompt("Enter a Number", )
+
+// if (answer > 0){
+//   alert(1)
+// } else if (answer < 0){
+//   alert(-1)
+// } else {
+//   alert(0)
+// }
+
+
+// let a = 4
+// let b = 1
+
+// let result = (a + b < 4) ? "Below" :  "Over";
+// alert(result)
+
+let login = prompt("Pls login lol", "")
+
+let message = (login == "Employee") ? alert("Hello") :
+(login == "Director") ? alert("Greetings") :
+(login == "") ? alert("No login") : alert("")
