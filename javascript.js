@@ -273,7 +273,7 @@ const btn = document.querySelector('button');
       return Math.floor(Math.random()*number);
     }
 
-const myNumber = Math.random();
+const myNumber = Math.random(5);
 console.log(myNumber)
 
 function draw() {
@@ -285,4 +285,5 @@ function draw() {
     ctx.fill();
   }
 }
+btn.addEventListener('click', draw)
 draw()
