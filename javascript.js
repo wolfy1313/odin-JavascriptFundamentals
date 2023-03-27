@@ -271,3 +271,5 @@ function draw() {
     ctx.fill();
   }
 }
+
+draw()
