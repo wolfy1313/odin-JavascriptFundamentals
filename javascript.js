@@ -259,6 +259,20 @@
 // const madeAString = myArray.join(' ');
 // console.log(madeAString);
 
+const btn = document.querySelector('button');
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
+
+    let WIDTH = document.documentElement.clientWidth;
+    let HEIGHT = document.documentElement.clientHeight;
+
+    canvas.width = WIDTH;
+    canvas.height = HEIGHT;
+
+    function random(number) {
+      return Math.floor(Math.random()*number);
+    }
+
 const myNumber = Math.random();
 console.log(myNumber)
 
@@ -271,5 +285,4 @@ function draw() {
     ctx.fill();
   }
 }
-
 draw()
