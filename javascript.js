@@ -254,6 +254,10 @@
 // (login == "Director") ? alert("Greetings") :
 // (login == "") ? alert("No login") : alert("")
 
-const myArray = ['I', 'love', 'chocolate', 'frogs'];
-const madeAString = myArray.join(' ');
-console.log(madeAString);
+// MDN Functions Lessons //
+// const myArray = ['I', 'love', 'chocolate', 'frogs'];
+// const madeAString = myArray.join(' ');
+// console.log(madeAString);
+
+const myNumber = Math.random();
+console.log(myNumber)
