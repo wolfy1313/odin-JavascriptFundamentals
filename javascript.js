@@ -248,8 +248,12 @@
 // let result = (a + b < 4) ? "Below" :  "Over";
 // alert(result)
 
-let login = prompt("Pls login lol", "")
+// let login = prompt("Pls login lol", "")
 
-let message = (login == "Employee") ? alert("Hello") :
-(login == "Director") ? alert("Greetings") :
-(login == "") ? alert("No login") : alert("")
+// let message = (login == "Employee") ? alert("Hello") :
+// (login == "Director") ? alert("Greetings") :
+// (login == "") ? alert("No login") : alert("")
+
+const myArray = ['I', 'love', 'chocolate', 'frogs'];
+const madeAString = myArray.join(' ');
+console.log(madeAString);
