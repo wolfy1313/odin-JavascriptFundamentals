@@ -288,7 +288,117 @@
 // btn.addEventListener('click', draw)
 // draw()
 
-const textBox = document.querySelector("#textBox");
-const output = document.querySelector("#output");
+// const textBox = document.querySelector("#textBox");
+// const output = document.querySelector("#output");
 
-textBox.addEventListener('keydown', (event) => output.textContent = `You pressed "${event.key}".`);
+// textBox.addEventListener('keydown', (event) => output.textContent = `You pressed "${event.key}".`);
+
+// function checkAge(age) {
+//  return (age>18) ? true : confirm('Did parents allow you?')
+// }
+
+// console.log(checkAge(18))
+// function checkAge(age) {
+//   return (age>18) || confirm('Did your parents allow you?')
+// }
+// console.log(checkAge(15))
+
+// function min(a, b) {
+//   return (a>b) ? `the least of the two numbers is ${b}` : `the least of the two numbers is ${a}`  
+// }
+
+// console.log(min(4,3))
+
+// function pow(x,n){
+//   let result = x
+//   for (let i = 1; i < n; i++){
+//     result *= x
+//   }
+//   return result
+// }
+
+// let x = prompt('x?', " ")
+// let n = prompt('n?', " ")
+
+// if (n < 1 ) {
+//   alert(`Power ${n} is not supported, use a positive integer`)
+// } else {
+//   alert ( pow(x, n))
+// }
+
+// console.log(pow(2,3))
+
+// const contacts = ['Buddy:223223', 'Pookie:3452343', 'Roge:2513243', 'Marty:675849', 'Gurlin:923848'];
+// const para = document.querySelector('p');
+// const input = document.querySelector('input');
+// const btn = document.querySelector('button');
+
+// btn.addEventListener('click', () => {
+//   const searchName = input.value.toLowerCase();
+//   input.value = '';
+//   input.focus();
+//   para.textContent = '';
+//   for (const contact of contacts){
+//     const splitContact = contact.split(':');
+//     if (splitContact[0].toLowerCase() === searchName) {
+//       para.textContent = `${splitContact[0]}'s number is ${splitContact[1]}.`;
+//       break;
+//     }
+//   }
+//   if (para.textContent === '') {
+//     para.textContent = 'Contact not found.'
+//   }
+// })
+
+// const addTwo = () => {
+// for (let i = 0; i <=10; i ++ ){
+//   alert(i)
+// }}
+
+// addTwo()
+
+const container = document.querySelector('#container');
+const bul = document.createElement('div');
+bul.classList.add('bul');
+bul.textContent = 'AHHH';
+
+container.appendChild(bul);
+
+const para = document.createElement('p')
+para.classList.add('newPara')
+para.textContent = "this is a new paragraph"
+para.setAttribute('style', 'color: red')
+
+
+const smallHead = document.createElement('h3')
+smallHead.classList.add('smallHead')
+smallHead.textContent = "I'm a blue h3!"
+smallHead.setAttribute('style', 'color: blue')
+
+bul.appendChild(para)
+bul.appendChild(smallHead)
+
+const newDiv = document.createElement('div')
+newDiv.classList.add('newDiv')
+newDiv.setAttribute('style', 'background-color: pink; border: 2px solid black')
+
+const newH1 = document.createElement('h1')
+newH1.classList.add('newH1')
+newH1.textContent = "I'm in a div"
+
+const realPara = document.createElement('p')
+realPara.classList.add('realPara')
+realPara.textContent = "ME TOO!"
+realPara.setAttribute('style', 'background-color: green; border: 2px solid red; text-align: center')
+
+newDiv.appendChild(newH1)
+newDiv.appendChild(realPara) 
+container.appendChild(newDiv)
+
+// const container = document.querySelector('#container');
+
+// const content = document.createElement('div');
+// content.classList.add('content');
+// content.textContent = 'This is the glorious text-content!';
+
+// container.appendChild(content);
