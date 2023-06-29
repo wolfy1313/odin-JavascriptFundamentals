@@ -357,44 +357,68 @@
 
 // addTwo()
 
-const container = document.querySelector('#container');
-const bul = document.createElement('div');
-bul.classList.add('bul');
-bul.textContent = 'AHHH';
+// const container = document.querySelector('#container');
+// const bul = document.createElement('div');
+// bul.classList.add('bul');
+// bul.textContent = 'AHHH';
 
-container.appendChild(bul);
+// container.appendChild(bul);
 
-const para = document.createElement('p')
-para.classList.add('newPara')
-para.textContent = "this is a new paragraph"
-para.setAttribute('style', 'color: red')
+// const para = document.createElement('p')
+// para.classList.add('newPara')
+// para.textContent = "this is a new paragraph"
+// para.setAttribute('style', 'color: red')
 
 
-const smallHead = document.createElement('h3')
-smallHead.classList.add('smallHead')
-smallHead.textContent = "I'm a blue h3!"
-smallHead.setAttribute('style', 'color: blue')
+// const smallHead = document.createElement('h3')
+// smallHead.classList.add('smallHead')
+// smallHead.textContent = "I'm a blue h3!"
+// smallHead.setAttribute('style', 'color: blue')
 
-bul.appendChild(para)
-bul.appendChild(smallHead)
+// bul.appendChild(para)
+// bul.appendChild(smallHead)
 
-const newDiv = document.createElement('div')
-newDiv.classList.add('newDiv')
-newDiv.setAttribute('style', 'background-color: pink; border: 2px solid black')
+// const newDiv = document.createElement('div')
+// newDiv.classList.add('newDiv')
+// newDiv.setAttribute('style', 'background-color: pink; border: 2px solid black')
 
-const newH1 = document.createElement('h1')
-newH1.classList.add('newH1')
-newH1.textContent = "I'm in a div"
+// const newH1 = document.createElement('h1')
+// newH1.classList.add('newH1')
+// newH1.textContent = "I'm in a div"
 
-const realPara = document.createElement('p')
-realPara.classList.add('realPara')
-realPara.textContent = "ME TOO!"
-realPara.setAttribute('style', 'background-color: green; border: 2px solid red; text-align: center')
+// const realPara = document.createElement('p')
+// realPara.classList.add('realPara')
+// realPara.textContent = "ME TOO!"
+// realPara.setAttribute('style', 'background-color: green; border: 2px solid red; text-align: center')
 
-newDiv.appendChild(newH1)
-newDiv.appendChild(realPara) 
-container.appendChild(newDiv)
+// newDiv.appendChild(newH1)
+// newDiv.appendChild(realPara) 
+// container.appendChild(newDiv)
 
+// const btn = document.querySelector('#btn')
+// btn.onclick = () => alert('allo gov worl')
+
+// const btn2 = document.querySelector('#btn2')
+// btn2.addEventListener('click', () => {
+//   alert("OIOIOIOIOIOIOI")
+// })
+
+// function alertFunction() {
+//   alert("WOW YOU ARE GOOD")
+// }
+
+// // btn2.addEventListener('click', alertFunction)
+// btn2.addEventListener('click', function (e) {
+//   console.log(e.target);
+//   e.target.style.background = 'chartreuse'
+// })
+
+// const buttons = document.querySelectorAll('button');
+// buttons.forEach((button) => {
+//   button.addEventListener('click', ()=> {
+//     alert(button.id)
+//   })
+// })
 // const container = document.querySelector('#container');
 
 // const content = document.createElement('div');
@@ -402,3 +426,13 @@ container.appendChild(newDiv)
 // content.textContent = 'This is the glorious text-content!';
 
 // container.appendChild(content);
+
+let user = {}
+
+user.name = "John"
+user.surname = "Smith"
+console.log(user.name)
+user.name = "Perry"
+console.log(user.name)
+
+delete user.name
