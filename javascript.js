@@ -437,16 +437,32 @@
 
 // delete user.name
 
-const isEmpty = (obj) => {
-  for (let key in obj) {
-    return false;
-  }
-  return true;
+// const isEmpty = (obj) => {
+//   for (let key in obj) {
+//     return false;
+//   }
+//   return true;
+// }
+
+// let schedule = {}
+
+// console.log(isEmpty(schedule))
+
+// schedule["8:30"] = "wake up"
+// console.log(isEmpty(schedule))
+
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
 }
 
-let schedule = {}
+function sum(obj){
+  let sum = 0
+  for (let key in obj){
+    sum += obj[key]
+  }
+  return sum
+}
 
-console.log(isEmpty(schedule))
-
-schedule["8:30"] = "wake up"
-console.log(isEmpty(schedule))
+console.log(sum(salaries))
