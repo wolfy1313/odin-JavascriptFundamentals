@@ -427,12 +427,26 @@
 
 // container.appendChild(content);
 
-let user = {}
+// let user = {}
 
-user.name = "John"
-user.surname = "Smith"
-console.log(user.name)
-user.name = "Perry"
-console.log(user.name)
+// user.name = "John"
+// user.surname = "Smith"
+// console.log(user.name)
+// user.name = "Perry"
+// console.log(user.name)
 
-delete user.name
+// delete user.name
+
+const isEmpty = (obj) => {
+  for (let key in obj) {
+    return false;
+  }
+  return true;
+}
+
+let schedule = {}
+
+console.log(isEmpty(schedule))
+
+schedule["8:30"] = "wake up"
+console.log(isEmpty(schedule))
