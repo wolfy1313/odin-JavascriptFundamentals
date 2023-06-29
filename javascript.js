@@ -427,6 +427,8 @@
 
 // container.appendChild(content);
 
+
+//task 1
 // let user = {}
 
 // user.name = "John"
@@ -437,6 +439,7 @@
 
 // delete user.name
 
+//task 2
 // const isEmpty = (obj) => {
 //   for (let key in obj) {
 //     return false;
@@ -451,18 +454,36 @@
 // schedule["8:30"] = "wake up"
 // console.log(isEmpty(schedule))
 
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130
+
+//task 3
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130
+// }
+
+// function sum(obj){
+//   let sum = 0
+//   for (let key in obj){
+//     sum += obj[key]
+//   }
+//   return sum
+// }
+
+// console.log(sum(salaries))
+
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
 }
 
-function sum(obj){
-  let sum = 0
-  for (let key in obj){
-    sum += obj[key]
-  }
-  return sum
+function multiplyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof (obj[key]) === "number"){
+      obj[key] *= 2
+    }
+  } return obj
 }
-
-console.log(sum(salaries))
+console.log(menu)
+console.log(multiplyNumeric(menu))
